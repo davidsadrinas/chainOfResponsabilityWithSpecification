@@ -1,0 +1,52 @@
+
+@{
+
+    ViewData["Title"] = "Home Page";
+}
+
+<form role="form" method="post" asp-controller="Home" asp-action="Shipping">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row">
+                <h2 class="col-md-offset-5 col-md-3">Package</h2>
+            </div>           
+            <br />
+            <div class="row">
+                <div class="col-md-4">
+                    <label>Length</label>
+                    <input type="number" name="Length" value="" /><br />
+                    <small class="form-text text-muted">Max: 400 mm</small>
+                </div>
+                <div class="col-md-4">
+                    <label>Breadth</label>
+                    <input type="number" name="Breadth" value="" /><br />
+                    <small class="form-text text-muted">Max: 600 mm</small>
+                </div>
+                <div class="col-md-4">
+                    <label>Height</label>
+                    <input type="number" name="Height" value="" /><br />
+                    <small class="form-text text-muted">Max: 250 mm</small>
+                </div>
+            </div>
+            <br />
+            <br />
+            <br />
+        </div>
+
+        <div class="col-md-offset-4 col-md-3">
+            <label>Weight</label>
+            <input type="number" name="Weight" value="" /><br />
+            <small class="form-text text-muted">Max: 25 kg</small>
+        </div>
+    </div>
+    
+    <br />
+    
+
+    <br />
+    <div class="row">
+        <div class="col-md-offset-5 ">
+            <input type="submit" value="Get Shipping" class="submit" />
+        </div>
+    </div>
+</form>
